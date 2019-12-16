@@ -3,7 +3,7 @@
 This repo is a fork of [TRADE](https://github.com/jasonwu0731/trade-dst) and [DND-LSTM](https://github.com/qihongl/dnd-lstm), including Recallable meta-learning for Dialogue State Tracking (RM-DST) and multi-task learning (MTL-DST). This code has been written using PyTorch >= 1.0. 
 
 <p align="center">
-<img src="plot/Fig1.png" width="75%" />
+<img src="plot/Fig1.png" width="50%" height="50%" />
 </p>
 
 Download the MultiWOZ dataset and the processed dst version.
