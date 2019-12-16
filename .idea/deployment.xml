@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" autoUpload="Always" serverName="hcp" autoUploadExternalChanges="true">
+    <serverData>
+      <paths name="Copy of project-level server 'lm02'">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="MER">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="hcp">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/trade-dst" local="$PROJECT_DIR$" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath path="/trade-dst/save/TRADE-Exceptrestaurantmultiwozdst/HDD400BSZ32DR0.2ACC-0.5584" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+      <paths name="linshuai">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="lm02">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/trade-dst" local="$PROJECT_DIR$" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+    <option name="myAutoUpload" value="ALWAYS" />
+  </component>
+</project>
