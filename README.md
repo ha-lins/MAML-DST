@@ -2,7 +2,7 @@
 
 This repo implements the model-agnostic meta-learning (MAML) for dialogue state tracking (DST). It achieves better performance than [TRADE](https://github.com/jasonwu0731/trade-dst) in the few-shot setting. It also implements the multi-task learning (MTL-DST) as the baseline. This code has been written using PyTorch >= 1.0. 
 
-This project is similar to [MERET](https://www.aclweb.org/anthology/2020.acl-main.636.pdf). Our project is preliminarily named recallable meta-learning for DST (RM-DST). Our Recallable Meta-DST (RM-DST) can not only fast adapt to a low-resource new domain, but also employ a recallable mechanism to maintain the
+This project has a similar idea to [MERET](https://www.aclweb.org/anthology/2020.acl-main.636.pdf). Our project is preliminarily named recallable meta-learning for DST (RM-DST), which can not only fast adapt to a low-resource new domain, but also employ a recallable mechanism to maintain the
 high performance in old tasks. If you are interested in the work, you can contact me for the draft. The overview of RM-DST is as follows: 
 
 <p align="center">
