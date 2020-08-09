@@ -1,6 +1,6 @@
 ## Recallable meta-learning for Dialogue State Tracking
 
-This repo is a fork of [TRADE](https://github.com/jasonwu0731/trade-dst) and [DND-LSTM](https://github.com/qihongl/dnd-lstm), including Recallable meta-learning for Dialogue State Tracking (RM-DST) and multi-task learning (MTL-DST). This code has been written using PyTorch >= 1.0. 
+This repo implements the model-agnostic meta-learning (MAML) for dialogue state tracking (DST). It achieves better performance than [TRADE](https://github.com/jasonwu0731/trade-dst) in the few-shot setting. It also implements the multi-task learning (MTL-DST) as the baseline. This code has been written using PyTorch >= 1.0.
 
 <p align="center">
 <img src="plot/Fig1.png" width="50%" height="50%" />
@@ -23,7 +23,7 @@ If you run into an error related to Cython, try to upgrade it first.
 
 ## Unseen Domain DST
 
-#### RM-DST
+#### MAML-DST
 Training
 ```console
 ❱❱❱ python3 myTrain_maml_DND.py -dec=TRADE -bsz=32 -dr=0.2 -lr=0.001 -le=1 -exceptd=${domain}
@@ -38,7 +38,7 @@ Training
 
 #### Fine-tune
 
-RM-DST
+MAML-DST
 ```console
 ❱❱❱ python3 fine_tune_dnd.py -bsz=8 -dr=0.2 -lr=0.001 -path=${save_path_except_domain} -exceptd=${except_domain}
 ```
@@ -47,3 +47,12 @@ MTL-DST
 ❱❱❱ python3 fine_tune.py -bsz=8 -dr=0.2 -lr=0.001 -path=${save_path_except_domain} -exceptd=${except_domain}
 ```
 
+#### Results
+<p align="center">
+<img src="plot/results.png" width="50%" height="50%" />
+</p>
+
+#### Reference
+1. [DAML](https://github.com/qbetterk/DAML): Domain Adaptive Dialog Generation via Meta Learning. [ACL 2019]
+2. [TRADE](https://github.com/jasonwu0731/trade-dst): Transferable Multi-Domain State Generator for Task-Oriented Dialogue Systems. [ACL 2019]
+3. Meta-Reinforced Multi-Domain State Generator for Dialogue Systems. [ACL 2020]
