@@ -51,7 +51,7 @@ MTL-DST
 
 ## Results
 <p align="center">
-<img src="plot/results.PNG" width="50%" height="50%" />
+<img src="plot/results.PNG" width="100%" height="100%" />
 </p>
 
 ## Reference
